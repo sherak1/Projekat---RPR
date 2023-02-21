@@ -30,9 +30,11 @@ public class Teacher implements Idable {
         this.username = username;
         this.password = password;
     }
-
-
-
+    /**
+     * Constructor without parameters
+     */
+    public Teacher() {
+    }
 
     @Override
     public void setId(int id) {
