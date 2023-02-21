@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.domain;
 
+import java.util.Objects;
+
 public class Student implements Idable {
     /**
      * Attributes for class Student
@@ -81,7 +83,39 @@ public class Student implements Idable {
     }
 
 
+    /**
+     * Method for comparing attributes by id, first_name, last_name, index_number, and address
+     * @param obj
+     * @return
+     */
+    @Override
+    public boolean equals(Object obj){
+        if (obj == this) return true;
+        Student student = (Student) obj;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        return id == student.id && Objects.equals(first_name, student.first_name) &&
+                Objects.equals(last_name, student.last_name) &&
+                Objects.equals(index_number, student.index_number) &&
+                Objects.equals(address, student.address);
+    }
 
+    /**
+     * Method for hashing attributes of Student class
+     * @return
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, first_name, last_name, index_number, address);
+    }
+
+    /**
+     * Method for printing values of Student class attributes
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "First name: " + this.first_name + "\nLast name: " + this.last_name + "\nAddress: " + this.address + "\nIndex number: " + this.index_number;
+    }
 
 
 
