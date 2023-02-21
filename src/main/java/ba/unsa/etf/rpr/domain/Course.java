@@ -15,4 +15,13 @@ public class Course implements Idable {
     private Student student; //key
 
 
+    @Override
+    public void setId(int id) {
+
+    }
+
+    @Override
+    public int getId() {
+        return 0;
+    }
 }
