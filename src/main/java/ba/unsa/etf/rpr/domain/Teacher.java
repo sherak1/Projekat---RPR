@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.domain;
 
+import java.util.Objects;
+
 public class Teacher implements Idable {
     /**
      * Atributes
@@ -85,6 +87,27 @@ public class Teacher implements Idable {
     public int getId() {
         return 0;
     }
+
+    /**
+     * Method for comparing Teacher by id, first_name, last_name, username and email
+     * @param obj
+     * @return
+     */
+    @Override
+    public boolean equals(Object obj){
+        if (obj == this) return true;
+        Teacher teacher = (Teacher) obj;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        return id == teacher.id && Objects.equals(first_name, teacher.first_name) &&
+                Objects.equals(last_name, teacher.last_name) &&
+                Objects.equals(username, teacher.username) &&
+                Objects.equals(email, teacher.email);
+    }
+
+
+
+
+
 }
 
 
