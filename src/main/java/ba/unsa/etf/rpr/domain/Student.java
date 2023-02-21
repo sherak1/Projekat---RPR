@@ -26,6 +26,12 @@ public class Student implements Idable {
         this.address = address;
     }
 
+    /**
+     * Constructor without parameters
+     */
+    public Student() {
+    }
+
     @Override
     public void setId(int id) {
 
