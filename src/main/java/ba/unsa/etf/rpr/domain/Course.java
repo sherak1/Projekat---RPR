@@ -33,7 +33,8 @@ public class Course implements Idable {
         this.student = student;
     }
 
-
+    public Course() {
+    }
 
     @Override
     public void setId(int id) {
