@@ -37,5 +37,5 @@ public class DaoFactory {
      * Method for access CoruseDao instance
      * @return
      */
-    public static CourseDao courseDao() {return courseDao; }
+    public static CourseDao courseDao() { return courseDao; }
 }
