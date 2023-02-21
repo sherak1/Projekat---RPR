@@ -93,4 +93,9 @@ public class Course implements Idable {
     public int getId() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "Course name: " + this.course_name + "\nLecture date: " + this.lecture_date + "\nLecture number: " + this.lecture_number + "\nExercise number: " + this.exercise_number+ "\nExercise date: " + this.exercise_date;
+    }
 }
