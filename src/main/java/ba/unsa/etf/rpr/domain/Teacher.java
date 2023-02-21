@@ -1,4 +1,6 @@
 package ba.unsa.etf.rpr.domain;
 
-public class Teacher {
+public class Teacher implements Idable {
 }
+
+
