@@ -10,7 +10,7 @@ public class Teacher implements Idable {
     private String first_name;
     private String last_name;
     private String email;
-    private String username;
+    private String user_name;
     private String password;
 
     /**
@@ -19,17 +19,17 @@ public class Teacher implements Idable {
      * @param first_name
      * @param last_name
      * @param email
-     * @param username
+     * @param user_name
      * @param password
      */
 
 
-    public Teacher(int id, String first_name, String last_name, String email, String username, String password) {
+    public Teacher(int id, String first_name, String last_name, String email, String user_name, String password) {
         this.id = id;
         this.first_name = first_name;
         this.last_name = last_name;
         this.email = email;
-        this.username = username;
+        this.user_name = user_name;
         this.password = password;
     }
     /**
@@ -63,11 +63,11 @@ public class Teacher implements Idable {
     }
 
     public String getUsername() {
-        return username;
+        return user_name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUsername(String user_name) {
+        this.user_name = user_name;
     }
 
     public String getPassword() {
@@ -89,7 +89,7 @@ public class Teacher implements Idable {
     }
 
     /**
-     * Method for comparing Teacher by id, first_name, last_name, username and email
+     * Method for comparing Teacher by id, first_name, last_name, user_name and email
      * @param obj
      * @return
      */
@@ -100,26 +100,26 @@ public class Teacher implements Idable {
         if (obj == null || getClass() != obj.getClass()) return false;
         return id == teacher.id && Objects.equals(first_name, teacher.first_name) &&
                 Objects.equals(last_name, teacher.last_name) &&
-                Objects.equals(username, teacher.username) &&
+                Objects.equals(user_name, teacher.user_name) &&
                 Objects.equals(email, teacher.email);
     }
 
     /**
-     * Method for hashing attributes of employee class
+     * Method for hashing attributes of teacher class
      * @return
      */
     @Override
     public int hashCode() {
-        return Objects.hash(id, first_name, last_name, username, email);
+        return Objects.hash(id, first_name, last_name, user_name, email);
     }
 
     /**
-     * Method for printing values of Employee class attributes
+     * Method for printing values of teacher class attributes
      * @return
      */
     @Override
     public String toString() {
-        return "First name: " + first_name + "\nLast name: " + last_name + "\nEmail: " + email + "\nUsername: " + username + "\nPassword: " + password;
+        return "First name: " + first_name + "\nLast name: " + last_name + "\nEmail: " + email + "\nUsername: " + user_name + "\nPassword: " + password;
     }
 
 
