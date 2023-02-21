@@ -104,7 +104,23 @@ public class Teacher implements Idable {
                 Objects.equals(email, teacher.email);
     }
 
+    /**
+     * Method for hashing attributes of employee class
+     * @return
+     */
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, first_name, last_name, username, email);
+    }
 
+    /**
+     * Method for printing values of Employee class attributes
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "First name: " + first_name + "\nLast name: " + last_name + "\nEmail: " + email + "\nUsername: " + username + "\nPassword: " + password;
+    }
 
 
 
