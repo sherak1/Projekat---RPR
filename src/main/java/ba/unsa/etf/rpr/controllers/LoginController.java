@@ -32,7 +32,7 @@ public class LoginController {
             teacher.setUsername(usernameField.getText());
             teacher.setPassword(passwordField.getText());
             (new TeacherManager()).loginSearch(teacher.getUsername(), teacher.getPassword());
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/employee.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/teacher.fxml"));
            Teacher teacher1 = DaoFactory.teacherDao().getByUsername(teacher.getUsername());
             loader.setController(new TeacherController(teacher1));
 

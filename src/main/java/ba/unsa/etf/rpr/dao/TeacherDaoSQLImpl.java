@@ -55,7 +55,7 @@ public class TeacherDaoSQLImpl extends AbstractDao<Teacher> implements TeacherDa
      */
     @Override
     public Teacher getByUsername(String user_name) throws HappyCourseException {
-        String query = "SELECT * FROM Teacher WHERE username = ?";
+        String query = "SELECT * FROM Teacher WHERE user_name = ?";
 
         try {
             PreparedStatement statement = getConnection().prepareStatement(query);
