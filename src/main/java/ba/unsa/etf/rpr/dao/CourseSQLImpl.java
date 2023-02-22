@@ -31,29 +31,6 @@ public class CourseSQLImpl extends AbstractDao<Course> implements CourseDao {
         return null;
     }
 
-    /**
-     * Method for getting list of criminal records based on id
-     * @param id
-     * @return
-     * @throws HappyCourseException
-     */
-    public List<Course> getByIdNew(int id) throws HappyCourseException {
-        String query = "SELECT * FROM CriminalRecord WHERE criminalId = ?";
-
-        List<Course> allCourses = new ArrayList<>();
-        try {
-            PreparedStatement statement = getConnection().prepareStatement(query);
-            statement.setInt(1, id);
-            ResultSet rs = statement.executeQuery();
-            while (rs.next()) {
-                Course result = row2object(rs);
-                allCourses.add(result);
-            }
-        } catch (SQLException e) {
-            throw new HappyCourseException(e.getMessage(), e);
-        }
-        return allCourses;
-    }
 
     /**
      * Method for getting course based on exercise_number

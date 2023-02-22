@@ -10,13 +10,7 @@ import java.util.List;
  */
 public interface CourseDao extends Dao<Course> {
 
-    /**
-     * Method for getting all courses based on student id
-     * @param id
-     * @return list of all courses records with specified id
-     * @throws HappyCourseException
-     */
-    public List<Course> getByIdNew(int id) throws HappyCourseException;
+
 
     public Course getByExercise_number(String exercise_number) throws HappyCourseException;
 }
