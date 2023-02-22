@@ -18,7 +18,7 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label prefHeight="54.0" prefWidth="164.0" text="First name" />
+      <Label contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="164.0" text="First name" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
       <Label prefHeight="47.0" prefWidth="179.0" text="Last name" GridPane.rowIndex="1" />
       <Label prefHeight="46.0" prefWidth="169.0" text="E-mail" GridPane.rowIndex="2" />
       <Label prefHeight="51.0" prefWidth="155.0" text="Username" GridPane.rowIndex="3" />
@@ -30,6 +30,6 @@
       <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
       <PasswordField fx:id="confrimField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-      <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="297.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registration" prefHeight="26.0" prefWidth="297.0" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="6" />
    </children>
 </GridPane>

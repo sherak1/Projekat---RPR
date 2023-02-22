@@ -42,6 +42,20 @@ public class TeacherManager {
             }
             throw e;
         }
+
+    }
+    public Teacher loginSearch(String username, String password) throws HappyCourseException {
+
+       Teacher teacher = DaoFactory.teacherDao().getByUsername(username);
+        if (username == null || password.equals("")) {
+            throw new HappyCourseException("Each field must be filled!");
+        }
+
+        if (!teacher.getPassword().equals(password)) {
+            throw new HappyCourseException("Password is not correct!");
+        }
+
+        return teacher;
     }
 
 

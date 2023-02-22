@@ -18,6 +18,7 @@ public class HomeController {
     public void showRegistration(ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/registration.fxml"));
+           // loader.setController(new RegistrationController());
             loader.setController(new RegistrationController());
             Parent root = loader.load();
             Stage stage = new Stage();
