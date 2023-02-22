@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
@@ -19,6 +20,9 @@
          <font>
             <Font size="15.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
       </TextArea>
       <TextArea layoutX="25.0" layoutY="288.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="303.0" text="Sanina Herak, Elektrotehnički fakultet Sarajevo " />
       <Hyperlink layoutX="31.0" layoutY="215.0" prefHeight="24.0" prefWidth="266.0" text="https://github.com/sherak1/Projekat---RPR" />

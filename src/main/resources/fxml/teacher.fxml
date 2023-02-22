@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="564.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label layoutX="167.0" layoutY="128.0" prefHeight="178.0" prefWidth="344.0" text="Probaa" />
+      <Label layoutX="26.0" layoutY="8.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="712.0" text="                        WELCOME TO HAPPYCOURSES" textFill="#cc2f2f">
+         <font>
+            <Font name="Bell MT" size="24.0" />
+         </font></Label>
+      <ImageView fitHeight="141.0" fitWidth="133.0" layoutX="586.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../img/books.jpg" />
+      </ImageView>
+
+
+
    </children>
 </AnchorPane>
