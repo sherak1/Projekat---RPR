@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.controllers.HomeController">
    <ImageView fitHeight="625.0" fitWidth="754.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../img/home.jpg" />
    </ImageView>
-   <Button fx:id="regButton" layoutX="260.0" layoutY="154.0" mnemonicParsing="false" onAction="#showRegistration" prefHeight="47.0" prefWidth="173.0" text="Registration" />
-   <Button fx:id="loginButton" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" onAction="#showLogin" prefHeight="47.0" prefWidth="180.0" text="Login" />
+   <Button fx:id="regButton" layoutX="255.0" layoutY="160.0" mnemonicParsing="false" onAction="#showRegistration" prefHeight="47.0" prefWidth="180.0" text="Registration" />
+   <Button fx:id="loginButton" layoutX="255.0" layoutY="226.0" mnemonicParsing="false" onAction="#showLogin" prefHeight="47.0" prefWidth="180.0" text="Login" />
+   <Button fx:id="aboutButton" alignment="CENTER" layoutX="255.0" layoutY="328.0" mnemonicParsing="false" onAction="#showAbout" prefHeight="43.0" prefWidth="180.0" text="About" />
+   <Text layoutX="236.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HappyCourses" wrappingWidth="238.13671875">
+      <font>
+         <Font name="System Bold" size="29.0" />
+      </font>
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0" startX="0.787878745433056" startY="0.19318183263142905">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.31578946113586426" green="0.18853801488876343" blue="0.07719298452138901" opacity="0.8500000238418579" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color opacity="0.2876712381839752" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+      <effect>
+         <Blend />
+      </effect>
+   </Text>
+   <Text layoutX="554.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome !" wrappingWidth="111.2734375">
+      <font>
+         <Font size="22.0" />
+      </font>
+      <fill>
+         <LinearGradient endX="1.0" endY="1.0">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.31578946113586426" green="0.18853801488876343" blue="0.07719298452138901" opacity="0.8500000238418579" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.1894736886024475" green="0.17052631080150604" blue="0.17052631080150604" />
+                  </color>
+               </Stop>
+            </stops>
+         </LinearGradient>
+      </fill>
+   </Text>
 
    <children>
 
