@@ -36,4 +36,23 @@ public class TeacherController {
             }
         }
 
+    public void showAddStudents(ActionEvent event) {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/addStudent.fxml"));
+            loader.setController(new StudentController());
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Students");
+            stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+            stage.setResizable(false);
+            stage.show();
+            StudentController studentController = loader.getController();
+           // listView.refresh();
+           // criminalController.setList(listView);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 }

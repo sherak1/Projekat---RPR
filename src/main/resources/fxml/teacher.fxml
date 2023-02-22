@@ -21,7 +21,7 @@
       <ListView layoutX="26.0" layoutY="90.0" prefHeight="211.0" prefWidth="210.0" />
       <Button fx:id="profileId" layoutX="586.0" layoutY="152.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="33.0" prefWidth="134.0" text="Profile" />
       <Button layoutX="586.0" layoutY="190.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="133.0" text="Logout" />
-      <Button layoutX="31.0" layoutY="304.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="203.0" text="Add new student" />
+      <Button fx:id="addStudentBtn" layoutX="31.0" layoutY="304.0" mnemonicParsing="false" onAction="#showAddStudent" prefHeight="26.0" prefWidth="203.0" text="Add new student" />
       <Label layoutX="330.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="234.0" text="Details about selected student" textFill="#733737">
          <font>
             <Font name="Bell MT Bold" size="16.0" />
