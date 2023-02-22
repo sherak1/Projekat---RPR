@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
@@ -7,6 +8,7 @@
    <ImageView fitHeight="625.0" fitWidth="754.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
       <Image url="@../img/home.jpg" />
    </ImageView>
+   <Button fx:id="regButton" layoutX="260.0" layoutY="154.0" mnemonicParsing="false" onAction="#showRegistration" prefHeight="26.0" prefWidth="138.0" text="Registration" />
 
    <children>
 
