@@ -9,6 +9,7 @@
       <Image url="@../img/home.jpg" />
    </ImageView>
    <Button fx:id="regButton" layoutX="260.0" layoutY="154.0" mnemonicParsing="false" onAction="#showRegistration" prefHeight="47.0" prefWidth="173.0" text="Registration" />
+   <Button fx:id="loginButton" layoutX="259.0" layoutY="226.0" mnemonicParsing="false" onAction="#showLogin" prefHeight="47.0" prefWidth="180.0" text="Login" />
 
    <children>
 
