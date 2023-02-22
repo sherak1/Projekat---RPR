@@ -21,7 +21,7 @@ public class HomeController {
             loader.setController(new RegistrationController());
             Parent root = loader.load();
             Stage stage = new Stage();
-            stage.setTitle("CR Registration");
+            stage.setTitle("Registration");
             stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
             stage.setResizable(false);
             stage.show();
