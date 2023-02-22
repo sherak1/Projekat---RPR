@@ -17,7 +17,7 @@ public class StudentDaoSQLImpl extends AbstractDao<Student> implements StudentDa
     }
 
     /**
-     * Method that gets student based on id
+     * Method that getss student based on id
      * @param id - primary key
      * @return
      * @throws HappyCourseException
