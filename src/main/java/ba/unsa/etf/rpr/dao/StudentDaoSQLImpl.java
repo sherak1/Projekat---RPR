@@ -127,4 +127,9 @@ public class StudentDaoSQLImpl extends AbstractDao<Student> implements StudentDa
         }
         return allStudentsList;
     }
+
+    @Override
+    public Student getByIndex_number(String index_number) throws HappyCourseException {
+        return null;
+    }
 }
