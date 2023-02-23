@@ -1,5 +1,5 @@
 # Projekat---Razvoj programskih rješenja
-Maven application
+JavaFX application, created with Maven
 # HappyCourse application
  
 Simple application about courses. 
