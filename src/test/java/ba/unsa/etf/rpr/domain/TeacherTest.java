@@ -1,4 +1,31 @@
 package ba.unsa.etf.rpr.domain;
 
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Tests for domain class Teacher
+ */
 public class TeacherTest {
+    /**
+     * Attribute new Teacher
+     */
+    private Teacher teacher = new Teacher();
+    @BeforeEach
+    public void setTeacher() {
+        teacher.setId(1);
+        teacher.setFirst_name("Sanina");
+        teacher.setLast_name("Herak");
+        teacher.setUsername("sherak1");
+        teacher.setEmail("sherak1@etf.unsa.ba");
+        teacher.setPassword("sanina-123");
+    }
+    @Test
+    void getFirst_name() {
+        assertEquals("Sanina", teacher.getFirst_name());
+    }
+
 }
+
