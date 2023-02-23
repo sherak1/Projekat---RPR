@@ -26,6 +26,9 @@ public class TeacherTest {
     void getFirst_name() {
         assertEquals("Sanina", teacher.getFirst_name());
     }
-
+    @Test
+    void getLast_name() {
+        assertEquals("Herak", teacher.getLast_name());
+    }
 }
 
