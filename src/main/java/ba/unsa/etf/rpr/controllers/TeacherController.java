@@ -98,6 +98,7 @@ Viewlist.setItems(FXCollections.observableArrayList(DaoFactory.courseDao().getAl
             }
         }
 
+
     public void showLogout(ActionEvent event) {
         Stage stage = (Stage) logoutBtn.getScene().getWindow();
         stage.close();
