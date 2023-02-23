@@ -34,5 +34,10 @@ public class TeacherTest {
     void getUsername() {
         assertEquals("sherak1", teacher.getUsername());
     }
+
+    @Test
+    void getEmail() {
+        assertEquals("sherak1@etf.unsa.ba", teacher.getEmail());
+    }
 }
 
