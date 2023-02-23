@@ -19,8 +19,9 @@ import java.util.List;
 import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class TeacherController {
-    public ListView listView;
-    public ListView Viewlist;
+    public ListView<Student> listView;
+    public ListView<Course> Viewlist;
+
 
     private Teacher teacher=new Teacher();
     public Student student=new Student();
@@ -33,14 +34,8 @@ public class TeacherController {
 
     public void initialize() {
         try {
-            ObservableList studentItems = FXCollections.observableArrayList();
-            List<Student> studentsList = DaoFactory.studentDao().allStudents();
-
-            for (int i = 0; i < studentsList.size(); i++) {
-                studentItems.add(studentsList.get(i).getFirst_name()+" "+ studentsList.get(i).getLast_name());
-            }
-            listView.setItems(studentItems);
-
+             listView.setItems(FXCollections.observableArrayList(DaoFactory.studentDao().allStudents()));
+Viewlist.setItems(FXCollections.observableArrayList(DaoFactory.courseDao().getAll()));
 
 
         } catch (Exception e) {
@@ -87,7 +82,7 @@ public class TeacherController {
             try {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/addCourse.fxml"));
 
-                loader.setController(new CourseController(student));
+                loader.setController(new CourseController(listView.getSelectionModel().getSelectedItem()));
                 Parent root = loader.load();
                 Stage stage = new Stage();
                 stage.setTitle("Courses");
