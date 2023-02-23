@@ -109,7 +109,7 @@ public class CourseSQLImpl extends AbstractDao<Course> implements CourseDao {
      * @return
      * @throws HappyCourseException
      */
-    public List<Course> allCourses (int studentId) throws HappyCourseException {
+    public List<Course> allCourses(int studentId) throws HappyCourseException {
         List<Course> allCourses = new ArrayList<>();
         String query = "SELECT * FROM Courses WHERE studentId = ?";
         try {

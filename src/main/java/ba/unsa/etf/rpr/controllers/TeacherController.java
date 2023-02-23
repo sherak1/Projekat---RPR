@@ -1,6 +1,7 @@
 package ba.unsa.etf.rpr.controllers;
 
 import ba.unsa.etf.rpr.dao.DaoFactory;
+import ba.unsa.etf.rpr.domain.Course;
 import ba.unsa.etf.rpr.domain.Student;
 import ba.unsa.etf.rpr.domain.Teacher;
 import javafx.collections.FXCollections;
@@ -39,7 +40,13 @@ public class TeacherController {
             }
             listView.setItems(studentItems);
 
+            ObservableList courseItems = FXCollections.observableArrayList();
+            List<Course> coursesList = DaoFactory.courseDao().getAll(); //*//
 
+            for (int i = 0; i < coursesList.size(); i++) {
+                studentItems.add(coursesList.get(i).getCourse_name()+" "+ coursesList.get(i).getLecture_number());
+            }
+            Viewlist.setItems(studentItems);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -55,7 +62,7 @@ public class TeacherController {
                 loader.setController(new ProfileController(teacher));
                 Parent root = loader.load();
                 Stage stage = new Stage();
-                stage.setTitle("Students");
+                stage.setTitle("My Profile");
                 stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
                 stage.setResizable(false);
                 stage.show();
