@@ -1,9 +1,15 @@
 # Projekat---Razvoj programskih rješenja
-#HappyCourse application
+# HappyCourse application
  
 Simple application about courses. 
 The application allows adding, deleting
 and viewing the desired functionalities.
+
+# clone and this commands: 
+
+mvn clean install 
+mvn clean javafx:run
+
 
 #HOME PAGE
 
