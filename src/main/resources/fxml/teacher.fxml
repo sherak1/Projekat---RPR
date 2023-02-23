@@ -30,7 +30,7 @@
       <TextField layoutX="331.0" layoutY="132.0" />
       <TextField layoutX="332.0" layoutY="169.0" />
       <TextField layoutX="333.0" layoutY="207.0" />
-      <ListView layoutX="515.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="210.0" />
+      <ListView fx:id="Viewlist" layoutX="515.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="210.0" />
       <Button layoutX="517.0" layoutY="518.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="210.0" text="Add new course" />
       <Button layoutX="332.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Delete student" />
       <Label layoutX="572.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="122.0" text="All courses" textFill="#733737">

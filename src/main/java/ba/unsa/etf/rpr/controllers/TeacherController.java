@@ -19,6 +19,7 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 
 public class TeacherController {
     public ListView listView;
+    public ListView Viewlist;
 
     private Teacher teacher=new Teacher();
     public TeacherController() {
@@ -37,10 +38,14 @@ public class TeacherController {
                 studentItems.add(studentsList.get(i).getFirst_name()+" "+ studentsList.get(i).getLast_name());
             }
             listView.setItems(studentItems);
+
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
 
 
 
@@ -70,12 +75,29 @@ public class TeacherController {
             stage.setResizable(false);
             stage.show();
             //StudentController studentController = loader.getController();
-           // listView.refresh();
-           // criminalController.setList(listView);
+            // listView.refresh();
+            // criminalController.setList(listView);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
+        public void showAddCourses(ActionEvent event) {
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/addCourse.fxml"));
+                loader.setController(new StudentController());
+                Parent root = loader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Courses");
+                stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
+                stage.setResizable(false);
+                stage.show();
+                //StudentController studentController = loader.getController();
+                // listView.refresh();
+                // criminalController.setList(listView);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
 
 }
