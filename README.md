@@ -1,11 +1,12 @@
 # Projekat---Razvoj programskih rješenja
+Maven application
 # HappyCourse application
  
 Simple application about courses. 
 The application allows adding, deleting
 and viewing the desired functionalities.
 
-# clone and this commands: 
+# Clone and this commands: 
 
 mvn clean install 
 mvn clean javafx:run
