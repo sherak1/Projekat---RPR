@@ -15,7 +15,7 @@ import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
 public class App  {
 
     public static void main( String[] args ) {
-        System.out.println( "Hello World!" );
+        System.out.println( "Happy Courses Application!" );
 
     }
 
