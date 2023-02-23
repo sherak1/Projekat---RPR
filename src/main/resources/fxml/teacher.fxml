@@ -19,26 +19,19 @@
             <Font name="Bell MT Bold" size="16.0" />
          </font></Label>
       <ListView fx:id="listView" layoutX="26.0" layoutY="90.0" prefHeight="211.0" prefWidth="210.0" />
-      <Button fx:id="profileId" layoutX="586.0" layoutY="152.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="33.0" prefWidth="134.0" text="Profile" />
-      <Button layoutX="586.0" layoutY="190.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="133.0" text="Logout" />
+      <Button fx:id="profileId" layoutX="586.0" layoutY="152.0" mnemonicParsing="false" onAction="#showProfile" prefHeight="33.0" prefWidth="134.0" text="Profile">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="26.0" layoutY="521.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="146.0" text="Logout">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
       <Button fx:id="addStudentBtn" layoutX="31.0" layoutY="304.0" mnemonicParsing="false" onAction="#showAddStudents" prefHeight="26.0" prefWidth="203.0" text="Add new student" />
-      <Label layoutX="330.0" layoutY="61.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="234.0" text="Details about selected student" textFill="#733737">
-         <font>
-            <Font name="Bell MT Bold" size="16.0" />
-         </font></Label>
-      <TextField layoutX="330.0" layoutY="93.0" />
-      <TextField layoutX="331.0" layoutY="132.0" />
-      <TextField layoutX="332.0" layoutY="169.0" />
-      <TextField layoutX="333.0" layoutY="207.0" />
       <ListView fx:id="Viewlist" layoutX="515.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="210.0" />
-      <Button fx:id="addCourseBtn" layoutX="517.0" layoutY="518.0" mnemonicParsing="false" onAction="#show" prefHeight="26.0" prefWidth="210.0" text="Add new course" />
-      <Button layoutX="332.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Delete student" />
+      <Button fx:id="addCourseBtn" layoutX="517.0" layoutY="518.0" mnemonicParsing="false" onAction="#showaddCourses" prefHeight="26.0" prefWidth="210.0" text="Add new course" />
+      <Button layoutX="311.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" text="Delete student" />
       <Label layoutX="572.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="122.0" text="All courses" textFill="#733737">
-         <font>
-            <Font name="Bell MT Bold" size="16.0" />
-         </font>
-      </Label>
-      <Label layoutX="70.0" layoutY="360.0" prefHeight="26.0" prefWidth="184.0" text="Details about Course" textFill="#733737">
          <font>
             <Font name="Bell MT Bold" size="16.0" />
          </font>
@@ -46,12 +39,13 @@
       <ImageView fitHeight="187.0" fitWidth="150.0" layoutX="320.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
          <Image url="@../img/Course.jpg" />
       </ImageView>
-      <TextField layoutX="73.0" layoutY="404.0" prefHeight="26.0" prefWidth="184.0" />
-      <TextField layoutX="71.0" layoutY="447.0" prefHeight="26.0" prefWidth="184.0" />
-      <TextField layoutX="71.0" layoutY="488.0" prefHeight="26.0" prefWidth="184.0" />
-      <TextField layoutX="72.0" layoutY="523.0" prefHeight="26.0" prefWidth="184.0" />
       <Button layoutX="313.0" layoutY="520.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="161.0" text="Delete course" />
-
+      <ImageView fitHeight="150.0" fitWidth="170.0" layoutX="320.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../img/profile.jpg" />
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="134.0" layoutX="31.0" layoutY="385.0" pickOnBounds="true" preserveRatio="true">
+      <Image url="@../img/computer.jpg" />
+   </ImageView>
 
    </children>
 </AnchorPane>
