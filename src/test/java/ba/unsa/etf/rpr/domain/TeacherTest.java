@@ -26,10 +26,12 @@ public class TeacherTest {
     void getFirst_name() {
         assertEquals("Sanina", teacher.getFirst_name());
     }
+
     @Test
     void getLast_name() {
         assertEquals("Herak", teacher.getLast_name());
     }
+
     @Test
     void getUsername() {
         assertEquals("sherak1", teacher.getUsername());
@@ -38,6 +40,11 @@ public class TeacherTest {
     @Test
     void getEmail() {
         assertEquals("sherak1@etf.unsa.ba", teacher.getEmail());
+    }
+
+    @Test
+    void getPassword() {
+        assertEquals("sanina-123", teacher.getPassword());
     }
 }
 
