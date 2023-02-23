@@ -18,11 +18,11 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <TextField GridPane.columnIndex="1" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="courseNameFld" GridPane.columnIndex="1" />
+      <TextField fx:id="lectureNumberFld" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="exerciseNumberFld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <DatePicker fx:id="date1Fld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <DatePicker fx:id="date2Fld" GridPane.columnIndex="1" GridPane.rowIndex="4" />
       <Label alignment="CENTER" prefHeight="17.0" prefWidth="247.0" text="Course name">
          <font>
             <Font size="15.0" />
@@ -33,7 +33,7 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" prefHeight="21.0" prefWidth="243.0" text="Lecture date" GridPane.rowIndex="2">
+      <Label fx:id="courseNameFld" alignment="CENTER" prefHeight="21.0" prefWidth="243.0" text="Lecture date" GridPane.rowIndex="2">
          <font>
             <Font size="15.0" />
          </font>
@@ -47,6 +47,6 @@
          <font>
             <Font size="15.0" />
          </font></Label>
-      <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="316.0" text="Confrim" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button fx:id="addCourseBtn" mnemonicParsing="false" onAction="#addCourse" prefHeight="25.0" prefWidth="316.0" text="Confrim" GridPane.columnIndex="1" GridPane.rowIndex="5" />
    </children>
 </GridPane>
