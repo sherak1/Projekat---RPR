@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
@@ -21,9 +22,21 @@
       <TextField fx:id="indexNumberFld" GridPane.columnIndex="1" GridPane.rowIndex="2" />
       <TextField fx:id="addressFld" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addStudent" prefHeight="26.0" prefWidth="296.0" text="Add Student" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-      <Label prefHeight="18.0" prefWidth="192.0" text="First name" />
-      <Label prefHeight="18.0" prefWidth="221.0" text="Last name" GridPane.rowIndex="1" />
-      <Label text="Index number" GridPane.rowIndex="2" />
-      <Label text="Address" GridPane.rowIndex="3" />
+      <Label alignment="CENTER" prefHeight="18.0" prefWidth="192.0" text="First name">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label alignment="CENTER" prefHeight="22.0" prefWidth="191.0" text="Last name" GridPane.rowIndex="1">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label alignment="CENTER" prefHeight="22.0" prefWidth="212.0" text="Index number" GridPane.rowIndex="2">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label alignment="CENTER" prefHeight="22.0" prefWidth="176.0" text="Address" GridPane.rowIndex="3">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
    </children>
 </GridPane>
