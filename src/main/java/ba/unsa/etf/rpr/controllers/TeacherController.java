@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 import javafx.scene.control.ListView;
@@ -22,7 +23,7 @@ public class TeacherController {
     public ListView<Student> listView;
     public ListView<Course> Viewlist;
 
-
+    public Button logoutBtn;
     private Teacher teacher=new Teacher();
     public Student student=new Student();
     public TeacherController() {
@@ -96,6 +97,11 @@ Viewlist.setItems(FXCollections.observableArrayList(DaoFactory.courseDao().getAl
                 throw new RuntimeException(e);
             }
         }
+
+    public void showLogout(ActionEvent event) {
+        Stage stage = (Stage) logoutBtn.getScene().getWindow();
+        stage.close();
+    }
 
 
 }
