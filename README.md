@@ -2,7 +2,7 @@
 JavaFX application, created with Maven
 # HappyCourse application
  
-Simple application about courses. 
+Simple application about courses. \\
 The application allows adding, deleting
 and viewing the desired functionalities.
 
