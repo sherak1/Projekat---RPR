@@ -76,7 +76,7 @@ public class CourseSQLImpl extends AbstractDao<Course> implements CourseDao {
             course.setExercise_number(rs.getString("exercise_number"));
             course.setExercise_date(rs.getDate("exercise_date").toLocalDate());
 
-            course.setStudent(DaoFactory.studentDao().getById(rs.getInt("studentId")));
+            course.setStudent(DaoFactory.studentDao().getById(rs.getInt("student_id")));
             return course;
         } catch (SQLException e) {
             throw new HappyCourseException(e.getMessage());
@@ -99,7 +99,7 @@ public class CourseSQLImpl extends AbstractDao<Course> implements CourseDao {
         item.put("lecture_date", object.getLecture_date());
         item.put("exercise_number", object.getExercise_number());
         item.put("exercise_date", object.getExercise_date());
-        item.put("studentId", object.getStudent().getId());
+        item.put("student_id", object.getStudent().getId());
         return item;
     }
 
@@ -111,7 +111,7 @@ public class CourseSQLImpl extends AbstractDao<Course> implements CourseDao {
      */
     public List<Course> allCourses(int studentId) throws HappyCourseException {
         List<Course> allCourses = new ArrayList<>();
-        String query = "SELECT * FROM Courses WHERE studentId = ?";
+        String query = "SELECT * FROM Courses WHERE student_id = ?";
         try {
             PreparedStatement statement = getConnection().prepareStatement(query);
             statement.setInt(1, studentId);

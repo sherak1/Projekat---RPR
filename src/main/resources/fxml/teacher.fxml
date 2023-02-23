@@ -29,7 +29,7 @@
          </font></Button>
       <Button fx:id="addStudentBtn" layoutX="31.0" layoutY="304.0" mnemonicParsing="false" onAction="#showAddStudents" prefHeight="26.0" prefWidth="203.0" text="Add new student" />
       <ListView fx:id="Viewlist" layoutX="515.0" layoutY="295.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="210.0" />
-      <Button fx:id="addCourseBtn" layoutX="517.0" layoutY="518.0" mnemonicParsing="false" onAction="#showaddCourses" prefHeight="26.0" prefWidth="210.0" text="Add new course" />
+      <Button fx:id="addCourseBtn" layoutX="517.0" layoutY="518.0" mnemonicParsing="false" onAction="#showAddCourses" prefHeight="26.0" prefWidth="210.0" text="Add new course" />
       <Button layoutX="311.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="162.0" text="Delete student" />
       <Label layoutX="572.0" layoutY="262.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="122.0" text="All courses" textFill="#733737">
          <font>

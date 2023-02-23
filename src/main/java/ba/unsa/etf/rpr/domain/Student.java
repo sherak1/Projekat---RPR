@@ -74,12 +74,12 @@ public class Student implements Idable {
 
     @Override
     public void setId(int id) {
-
+    this.id=id;
     }
 
     @Override
     public int getId() {
-        return 0;
+        return id;
     }
 
 
